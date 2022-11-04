@@ -33,7 +33,9 @@ function TaskInput(props) {
         <button onClick={onAddTask} className="btn btn-success me-3">
           Add
         </button>
-        <button className="btn btn-danger">Rests Tasks</button>
+        <button onClick={props.removeAllTasks} className="btn btn-danger">
+          Rests Tasks
+        </button>
       </div>
     </div>
   );
